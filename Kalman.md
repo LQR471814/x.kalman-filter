@@ -6,7 +6,8 @@ deterministic model of a system to construct the most optimal (in
 the least-squares mean sense) estimate for the state of the
 system.
 
-> [!EXAMPLE]
+> **Example**
+>
 > You have a gyroscope (tells you rotational velocity) and
 > accelerometer (tells you absolute rotation). You are not
 > confident in the measurements of the accelerometer and want to
