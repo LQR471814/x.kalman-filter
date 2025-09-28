@@ -1,4 +1,6 @@
 # Kalman Filter
 
-Experiments with computing Kalman Filters.
+Experiments with Kalman Filters.
+
+[Here](./Kalman.md) is an explainer for how they work.
 
