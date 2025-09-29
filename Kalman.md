@@ -45,19 +45,28 @@ system.
 - $B$ (optional) - "Control input model"
     - A matrix that models deterministic effects for a given
       control input on the system.
+    - This can be thought of as part of the deterministic model
+      that gives the predicted next state for the current state.
     - Ex. The reorientation of a servo in response to a change in
       angle.
 - $K$ - "Kalman gain"
     - This is a matrix that is derived from all the other
       components that represents how much we trust our own
       predictions based on prior state and the deterministic model
-      vs. how much we trust the measurements.
+      versus how much we trust the measurements.
     - It also describes how much weight to put towards our
       predictions and the measurements to compute our best
       estimate for the current state.
 - Prediction: Processes for predicting the system state.
 - Update: Processes for updating your prediction methods based on
   how well your predictions performed.
+
+> [!NOTE]
+> The variables that should be put in $F$ or $B$ are those that
+> must be integrated to produce an estimate of the system state.
+>
+> The variables that should be put in $z$ are those that give you
+> directly the absolute system state.
 
 ### Details on Covariance Matrices
 
